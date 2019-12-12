@@ -1,0 +1,17 @@
+.category{
+    
+    list-style: none;
+    margin-left: 0px;
+}
+.category li{
+    display: inline-block;
+}
+.circle-wrap{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #10bbe6;
+}
+.circle-wrap img{
+    width: 100px;
+}

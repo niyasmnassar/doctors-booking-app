@@ -1,0 +1,47 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.login-wrap{
+    background: url(assets/images/slider-1.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    &::before{
+        background: rgba(0, 0, 0, 0) -webkit-gradient(linear, left top, right top, from(#26aef9), to(#22f285)) repeat scroll 0 0;
+        background: rgba(0, 0, 0, 0) linear-gradient(to right, #26aef9 0%, #22f285 100%) repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}
+ul{
+    &.users{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        li{
+            background:rgba(238, 238, 238);
+            padding: 2em;
+            border-radius: 4px;
+            margin-bottom: 7px;
+            display: grid;
+            grid-template-columns: 60px auto;
+            display: inline-block;
+            margin: 10px;
+            img{
+                border-radius: 50%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+

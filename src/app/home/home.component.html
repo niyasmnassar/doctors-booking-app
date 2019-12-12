@@ -1,0 +1,176 @@
+<app-menu></app-menu>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="category mt-5" *ngIf="category">
+                <li *ngFor="let category of category" class="m-2">
+                    <div class="card rounded text-center">
+                        <div class="card-body">
+                            <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                <img [src]="category.avatar" alt="">
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <h5>{{category.department}}</h5>
+                        </div>
+                    </div>
+                </li>
+                
+                <!-- <li class="m-2">
+                    <div class="card rounded text-center">
+                        <div class="card-body">
+                            <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                <span class="">
+                                <i class="fa fa-3x fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <h5>Dentist</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="m-2">
+                    <div class="card rounded text-center">
+                        <div class="card-body">
+                            <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                <span class="">
+                                <i class="fa fa-3x fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-header">
+                            <h5>Dermatologist</h5>
+                        </div>
+                    </div>
+                </li>
+                <li class="m-2">
+                        <div class="card rounded text-center">
+                            <div class="card-body">
+                                <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                    <span class="">
+                                    <i class="fa fa-3x fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <h5>Pediatric</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-2">
+                        <div class="card rounded text-center">
+                            <div class="card-body">
+                                <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                    <span class="">
+                                    <i class="fa fa-3x fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <h5>Orthopedician</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-2">
+                        <div class="card rounded text-center">
+                            <div class="card-body">
+                                <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                    <span class="">
+                                    <i class="fa fa-3x fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <h5>Cardiology</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-2">
+                        <div class="card rounded text-center">
+                            <div class="card-body">
+                                <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                    <span class="">
+                                    <i class="fa fa-3x fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <h5>Gynocologist</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-2">
+                        <div class="card rounded text-center">
+                            <div class="card-body">
+                                <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                    <span class="">
+                                    <i class="fa fa-3x fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <h5>Neurologist</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-2">
+                        <div class="card rounded text-center">
+                            <div class="card-body">
+                                <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                    <span class="">
+                                    <i class="fa fa-3x fa-user"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <h5>Homeopathy</h5>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="m-2">
+                            <div class="card rounded text-center">
+                                <div class="card-body">
+                                    <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                        <span class="">
+                                        <i class="fa fa-3x fa-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-header">
+                                    <h5>Oncologist</h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="m-2">
+                            <div class="card rounded text-center">
+                                <div class="card-body">
+                                    <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                        <span class="">
+                                        <i class="fa fa-3x fa-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-header">
+                                    <h5>Ayurveda</h5>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="m-2">
+                            <div class="card rounded text-center">
+                                <div class="card-body">
+                                    <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                        <span class="">
+                                        <i class="fa fa-3x fa-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-header">
+                                    <h5>Radiologist</h5>
+                                </div>
+                            </div>
+                        </li> -->
+            </ul>
+        </div>
+    </div>
+</div>
