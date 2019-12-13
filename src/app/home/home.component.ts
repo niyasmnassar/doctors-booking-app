@@ -12,10 +12,10 @@ export class HomeComponent implements OnInit {
     constructor(private data:DataService) { }
   
     ngOnInit() {
-      this.data.getCategories().subscribe(data => {
-        this.category = data
-        console.log(this.category);
-      })
+      // this.data.getCategories().subscribe(data => {
+      //   this.category = data
+      //   console.log(this.category);
+      // })
     }
 
 }

@@ -12,10 +12,10 @@ export class DoctorcategoryComponent implements OnInit {
   constructor(private dtata:DataService) { }
 
   ngOnInit() {
-    this.dtata.getCategories().subscribe(data => {
-      this.Categories = data
-      console.log(this.Categories);
-    })
+    // this.dtata.getCategories().subscribe(data => {
+    //   this.Categories = data
+    //   console.log(this.Categories);
+    // })
   }
 
 }

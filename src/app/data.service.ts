@@ -8,6 +8,7 @@ export class DataService {
 
   constructor( private http: HttpClient) { }
   getCategories(){
-    return this.http.get('http://localhost:3000/category')
+    // return this.http.get('https://reqres.in/api/users')
+    // http://localhost:3000/category
   }
 }
