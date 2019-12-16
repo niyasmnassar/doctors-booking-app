@@ -7,15 +7,15 @@ import { DataService } from '../data.service';
   styleUrls: ['./doctorcategory.component.css']
 })
 export class DoctorcategoryComponent implements OnInit {
-  Categories : object;
+  profile : object;
 
   constructor(private dtata:DataService) { }
 
   ngOnInit() {
-    // this.dtata.getCategories().subscribe(data => {
-    //   this.Categories = data
-    //   console.log(this.Categories);
-    // })
+    this.dtata.getProfiles().subscribe(data => {
+      this.profile = data
+      console.log(this.profile);
+    })
   }
 
 }

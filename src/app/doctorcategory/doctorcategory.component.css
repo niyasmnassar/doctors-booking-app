@@ -1,0 +1,26 @@
+.categorylisting{
+    
+    list-style: none;
+    margin-left: 0px;
+}
+.categorylisting li{
+    display: inline-block;
+}
+.categorylisting .circle-wrap{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #10bbe6;
+}
+.categorylisting .circle-wrap img{
+    width: 50px;
+}
+.categorylisting h4{
+    font-size: 18px;
+}
+.categorylisting h6{
+    font-size: 14px;
+}
+.categorylisting p{
+    font-size: 13px;
+}

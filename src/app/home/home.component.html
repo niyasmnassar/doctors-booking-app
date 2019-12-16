@@ -2,22 +2,24 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <!-- <ul class="category mt-5" *ngIf="category"> -->
-            <ul class="category mt-5">
-                <!-- <li *ngFor="let category of category" class="m-2">
-                    <div class="card rounded text-center">
-                        <div class="card-body">
-                            <div class="circle-wrap d-flex justify-content-center align-items-center">
-                                <img [src]="category.avatar" alt="">
+            <ul class="category mt-5" *ngIf="category">
+            <!-- <ul class="category mt-5"> -->
+                <li *ngFor="let category of category" class="m-2">
+                    <a routerLink="/category">
+                        <div class="card rounded text-center">
+                            <div class="card-body">
+                                <div class="circle-wrap d-flex justify-content-center align-items-center">
+                                    <img [src]="category.avatar" alt="">
+                                </div>
+                            </div>
+                            <div class="card-header">
+                                <h5>{{category.department}}</h5>
                             </div>
                         </div>
-                        <div class="card-header">
-                            <h5>{{category.department}}</h5>
-                        </div>
-                    </div>
-                </li> -->
+                    </a>
+                </li>
                 
-                <li class="m-2">
+                <!-- <li class="m-2">
                     <div class="card rounded text-center">
                         <div class="card-body">
                             <div class="circle-wrap d-flex justify-content-center align-items-center">
@@ -170,7 +172,7 @@
                                     <h5>Radiologist</h5>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
             </ul>
         </div>
     </div>
