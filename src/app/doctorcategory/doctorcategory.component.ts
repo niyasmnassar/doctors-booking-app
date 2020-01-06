@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import { ActivatedRoute,Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-doctorcategory',
@@ -7,15 +9,22 @@ import { DataService } from '../data.service';
   styleUrls: ['./doctorcategory.component.css']
 })
 export class DoctorcategoryComponent implements OnInit {
-  profile : object;
+  doctors : object;
 
-  constructor(private dtata:DataService) { }
+  constructor(private data: DataService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.dtata.getProfiles().subscribe(data => {
-      this.profile = data
-      console.log(this.profile);
+    
+    let category_id = this.route.snapshot.params.id;
+    this.data.getDoctors(category_id).subscribe(data => {
+      this.doctors = data
+      console.log(this.doctors);
     })
   }
+
+  onSelect(doctors) {
+    this.router.navigate(['/category', category._id]);
+  }
+
 
 }

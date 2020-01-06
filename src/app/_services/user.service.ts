@@ -8,7 +8,7 @@ export class UserService {
     constructor(private http: HttpClient) { }
 
     getAll() {
-        return this.http.get<User[]>(`/users`);
+        return this.http.get<User[]>(`https://heroku-doc-niyas.herokuapp.com/api/user`);
     }
 
     getById(id: number) {
@@ -16,11 +16,12 @@ export class UserService {
     }
 
     register(user: User) {
-        return this.http.post(`/users/register`, user);
+        return this.http.post(`https://heroku-doc-niyas.herokuapp.com/api/user/register`, user);
     }
 
     update(user: User) {
-        return this.http.put(`/users/` + user.id, user);
+        return this.http.put(`/users/` + user._id, user);
+        
     }
 
     delete(id: number) {

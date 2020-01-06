@@ -11,7 +11,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
-import { fakeBackendProvider } from './_helpers';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -22,6 +21,7 @@ import { RegisterComponent } from './register/register.component';
 import { DoctorcategoryComponent } from './doctorcategory/doctorcategory.component';
 import { AlertComponent } from './_components';
 import { UserlistComponent } from './userlist/userlist.component';
+import { DoctorprofileComponent } from './doctorprofile/doctorprofile.component';
 
 
 @NgModule({
@@ -33,7 +33,8 @@ import { UserlistComponent } from './userlist/userlist.component';
     DoctorcategoryComponent,
     RegisterComponent,
     HomeComponent,
-    UserlistComponent
+    UserlistComponent,
+    DoctorprofileComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +51,7 @@ import { UserlistComponent } from './userlist/userlist.component';
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
     // provider used to create fake backend
-    fakeBackendProvider
+    // fakeBackendProvider
 ],
   bootstrap: [AppComponent]
 })

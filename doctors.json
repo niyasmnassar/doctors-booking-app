@@ -3,7 +3,44 @@
       {
         "id": 1,
         "department" : "Physician",
-        "avatar" : "/assets/images/icons/doctor.png"
+        "avatar" : "/assets/images/icons/doctor.png",
+        "subcategories" : [
+          {
+            "scid": 1,
+            "scname":"Ravishanker Reddy",
+            "avatar" : "/assets/images/icons/doctor.png",
+            "sdepartment" : "physician",
+            "qualification" : "MBBS MD FRC London"
+          },
+          {
+            "scid": 2,
+            "scname":"Ravishanker Reddy",
+            "avatar" : "/assets/images/icons/doctor.png",
+            "sdepartment" : "physician",
+            "qualification" : "MBBS MD FRC London"
+          },
+          {
+            "scid": 3,
+            "scname":"Ravishanker Reddy",
+            "avatar" : "/assets/images/icons/doctor.png",
+            "sdepartment" : "physician",
+            "qualification" : "MBBS MD FRC London"
+          },
+          {
+            "scid": 4,
+            "scname":"Ravishanker Reddy",
+            "avatar" : "/assets/images/icons/doctor.png",
+            "sdepartment" : "physician",
+            "qualification" : "MBBS MD FRC London"
+          },
+          {
+            "scid": 5,
+            "scname":"Ravishanker Reddy",
+            "avatar" : "/assets/images/icons/doctor.png",
+            "sdepartment" : "physician",
+            "qualification" : "MBBS MD FRC London"
+          }
+        ]
       }, 
       {
         "id": 2,

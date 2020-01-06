@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService } from '../data.service';
 
 @Component({
@@ -9,13 +10,19 @@ import { DataService } from '../data.service';
 export class HomeComponent implements OnInit {
   category : object;
 
-    constructor(private data:DataService) { }
+  constructor(private data: DataService, private router: Router) { 
+
+  }
+
   
     ngOnInit() {
       this.data.getCategories().subscribe(data => {
         this.category = data
         console.log(this.category);
       })
+    }
+    onSelect(category){
+      this.router.navigate(['/category', category._id]);
     }
 
 }

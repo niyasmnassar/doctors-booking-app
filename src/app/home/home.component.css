@@ -6,6 +6,14 @@
 .category li{
     display: inline-block;
 }
+.category li h5{
+    color: #10bbe6;
+    font-size: 16px;
+
+}
+.category li a{
+    text-decoration: none;
+}
 .circle-wrap{
     border-radius: 50%;
     width: 150px;

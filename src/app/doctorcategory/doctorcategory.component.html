@@ -1,16 +1,16 @@
 <app-menu></app-menu>
 <h2>{{title}}</h2>
-<ul class="categorylisting my-3" *ngIf="profile">
-    <li *ngFor="let profile of profile">
-            <div class="card-body d-flex align-items-center">
-                <div class="circle-wrap d-flex justify-content-center p-0 align-items-center mr-4">
-                    <img [src]="profile.avatar">
-                </div>
-                <div class="content-wrap">
-                    <h4 class="mb-0">{{profile.author}}</h4>
-                    <h6 class="mb-2">{{profile.title}}</h6>
-                    <p>{{profile.graduation}}</p>
-                </div>
+<ul class="categorylisting my-3" *ngIf="doctors">
+    <li *ngFor="let doctor of doctors.data" (click)="onSelect(doctor)">
+        <div class="card-body d-flex align-items-center">
+            <div class="circle-wrap d-flex justify-content-center p-0 align-items-center mr-4">
+                <img [src]="doctor.avatar">
             </div>
+            <div class="content-wrap">
+                <h4 class="mb-0">{{doctor.name}}</h4>
+                <h6 class="mb-2">{{doctor.department}}</h6>
+                <p>{{doctor.qualification}}</p>
+            </div>
+        </div>
     </li>
 </ul>
