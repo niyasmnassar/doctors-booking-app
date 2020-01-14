@@ -1,11 +1,53 @@
 <app-menu></app-menu>
-<section>
+<section class="profile-wrap">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img class="img-fluid rounded" src="assets/images/doctors/profile-images/deepak.jpg">
+                <div class="row mt-3">
+                    <div class="col-md-12 biography">
+                        <h2>BIOGRAPHY</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vitae tempus massa. Vestibulum auctor augue id metus pharetra, condimentum porttitor sapien gravida. Nullam interdum sapien vel ex tempus accumsan. Sed faucibus, ligula non facilisis imperdiet, lacus orci pretium elit, id suscipit elit velit a velit. Donec rutrum commodo ipsum, vel mollis enim finibus at. Maecenas nec neque metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed fermentum vel odio sit amet interdum. Quisque ultricies diam vitae interdum molestie. Morbi id mauris eget odio porttitor interdum. Integer pretium nulla et feugiat laoreet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Profile</h2>
+                <h3>Dr. Deepak Davidson</h3>
+                <h4>Cardiologist</h4>
+                <div class="qualifications">
+                    <p>MBBS FRC London</p>
+                    <p>Cardiology Surgeon</p>
+                    <p>Cardiology Consultant</p>
+                    <p>Senior Cardiologist in Our Hospital</p>
+                </div>
+                <h2>Speciality</h2>
+                <div class="speciality">
+                    <span>Cardiology</span>
+                    <span>Surgeon</span>
+                </div>
 
+                <h2>Experience</h2>
+                <p>22 years +</p>
+                <h2>Languages</h2>
+                <p>English, Spanish, Deutch</p>
+                <h2>Types of</h2>
+                <p>Full Time Cardiologist</p>
+                <button class="btn btn-primary cta-book" (click)="openModalWithClass(template)">Book an Appointment</button>
             </div>
         </div>
+        
     </div>
 </section>
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Modal</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Just a modal with a bunch of words inside, nothing serious.
+  </div>
+</ng-template>
 

@@ -4,9 +4,7 @@
         <div class="col-md-12">
             <ul class="category mt-5" *ngIf="category">
             <!-- <ul class="category mt-5"> -->
-                <li *ngFor="let cat of category.data" (click)="onSelect(cat)" class="m-2">
-                    
-                     
+                <li data-aos="flip-left" data-aos-offset="200" *ngFor="let cat of category.data" (click)="onSelect(cat)" class="m-2">
                         <div class="card rounded text-center">
                             <div class="card-body">
                                 <div class="circle-wrap d-flex justify-content-center align-items-center">
@@ -17,9 +15,7 @@
                                 <h5>{{cat.department}}</h5>
                             </div>
                         </div>
-                   
                 </li>
-                
                 <!-- <li class="m-2">
                     <div class="card rounded text-center">
                         <div class="card-body">

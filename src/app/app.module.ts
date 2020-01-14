@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,7 +13,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { NgxSpinnerModule } from "ngx-spinner";
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -22,6 +22,7 @@ import { DoctorcategoryComponent } from './doctorcategory/doctorcategory.compone
 import { AlertComponent } from './_components';
 import { UserlistComponent } from './userlist/userlist.component';
 import { DoctorprofileComponent } from './doctorprofile/doctorprofile.component';
+
 
 
 @NgModule({
@@ -34,7 +35,7 @@ import { DoctorprofileComponent } from './doctorprofile/doctorprofile.component'
     RegisterComponent,
     HomeComponent,
     UserlistComponent,
-    DoctorprofileComponent
+    DoctorprofileComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +45,7 @@ import { DoctorprofileComponent } from './doctorprofile/doctorprofile.component'
     AppRoutingModule, 
     NgbModule,
     HttpClientModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
@@ -52,6 +53,9 @@ import { DoctorprofileComponent } from './doctorprofile/doctorprofile.component'
 
     // provider used to create fake backend
     // fakeBackendProvider
+],
+schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
 ],
   bootstrap: [AppComponent]
 })

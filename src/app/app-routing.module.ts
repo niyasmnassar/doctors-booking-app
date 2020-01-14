@@ -9,14 +9,14 @@ import { UserlistComponent } from './userlist/userlist.component';
 import { AuthGuard } from './_guards';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, canActivate: [AuthGuard] },
-  { path: 'login', component: LoginComponent },
-  { path: 'category/:id', component: DoctorcategoryComponent},
-  { path: 'profile/:id', component: DoctorprofileComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'userlist', component: UserlistComponent },
+  { path: "", component: HomeComponent, canActivate: [AuthGuard] },
+  { path: "login", component: LoginComponent },
+  { path: "category/:id", component: DoctorcategoryComponent },
+  { path: "profile", component: DoctorprofileComponent },
+  { path: "register", component: RegisterComponent },
+  { path: "userlist", component: UserlistComponent },
   // otherwise redirect to home
-  { path: '**', redirectTo: '' }
+  { path: "**", redirectTo: "" }
 ];
 
 @NgModule({
