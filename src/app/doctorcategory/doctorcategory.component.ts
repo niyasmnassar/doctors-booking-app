@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
-import { ActivatedRoute,Router
-
-
-} from '@angular/router';
-
+import { ActivatedRoute,Router} from '@angular/router';
 
 @Component({
   selector: 'app-doctorcategory',
@@ -23,10 +19,6 @@ export class DoctorcategoryComponent implements OnInit {
       this.doctors = data
       console.log(this.doctors);
     })
-  }
-
-  onSelect(doctors) {
-    // this.router.navigate(['/category', category._id]);
   }
 
 

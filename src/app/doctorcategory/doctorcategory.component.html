@@ -1,7 +1,7 @@
 <app-menu></app-menu>
 <h2>{{title}}</h2>
 <ul class="categorylisting my-3" *ngIf="doctors">
-    <li *ngFor="let doctor of doctors.data" (click)="onSelect(doctor)">
+    <li *ngFor="let doctor of doctors.data">
         <div class="card-body d-flex align-items-center">
             <div class="circle-wrap d-flex justify-content-center p-0 align-items-center mr-4">
                 <img [src]="doctor.avatar">
