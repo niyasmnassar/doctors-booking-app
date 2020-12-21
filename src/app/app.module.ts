@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { fakeBackendProvider } from './_helpers';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
@@ -52,7 +53,7 @@ import { DoctorprofileComponent } from './doctorprofile/doctorprofile.component'
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
     // provider used to create fake backend
-    // fakeBackendProvider
+    fakeBackendProvider
 ],
 schemas: [
     CUSTOM_ELEMENTS_SCHEMA

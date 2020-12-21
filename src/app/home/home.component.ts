@@ -9,7 +9,6 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
   category : object;
-
   constructor(private data: DataService, private router: Router) { 
 
   }
@@ -18,11 +17,11 @@ export class HomeComponent implements OnInit {
     ngOnInit() {
       this.data.getCategories().subscribe(data => {
         this.category = data
-        console.log(this.category);
+        // console.log(this.category);
       })
     }
     onSelect(category){
-      this.router.navigate(['/category', category._id]);
+      this.router.navigate(['/category/', category.id]);
     }
 
 }
